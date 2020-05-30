@@ -3,7 +3,9 @@
 </template>
 
 <script>
-import WebDataRocks from "webdatarocks";
+import WebDataRocks from 'webdatarocks'
+import sampleData from '../data/Sample.json'
+
 export default {
   props: {
     afterchartdraw: Function,
@@ -51,14 +53,21 @@ export default {
   },
   mounted: function() {
     this.webdatarocks = new WebDataRocks({
-      ...this.$props,
-      container: this.$el
-    });
+      container: this.$el,
+      toolbar: true,
+      height: 600,
+      report: {
+        dataSource: {
+          dataSourceType: 'json',
+          data: sampleData
+        }
+      }
+    })
   },
   beforeUpdate() {
-    return false;
+    return false
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

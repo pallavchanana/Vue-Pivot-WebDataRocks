@@ -1,0 +1,30 @@
+[{
+    "Salary": {
+        "type": "number"
+    },
+    "Name": {
+        "type": "string"
+    },
+    "Gender": {
+        "type": "string"
+    },
+    "Country": {
+        "type": "string"
+    },
+    "City": {
+        "type": "string"
+    },
+    "Birthday": {
+        "type": "year/month/day"
+    },
+    "Eye Color": {
+        "type": "string"
+    }
+},
+[1444, "brown", "Angelina", "female", "Benin", "Porto-Novoa", "1998/10/15"],
+[2000, "blue", "Bryan", "male", "Solomon Islands", "Honiara", "1992/11/02"],
+[4500, "blue", "Bryan", "male", "Solomon Islands", "Honiara", "1997/05/01"],
+[700, "blue", "Palmer", "male", "Puerto Rico", "San Juan", "1976/07/08"],
+[550, "blue", "Christy", "female", "Uruguay", "Montevideo", "1989/12/05"],
+[999, "brown", "John", "male", "Central African Republic", "Bangui", "1968/09/18"]
+]
